@@ -5,7 +5,7 @@ package cn.wilsono.design.patterns.creational.factorymethod;
  */
 public class Main {
 
-    public static void main(String[] args) throws IllegalAccessException, InstantiationException, ClassNotFoundException {
+    public static void main(String[] args) {
 
         ProductFactory productAFactory = new ProductAFactory();
         ProductFactory productBFactory = new ProductBFactory();
