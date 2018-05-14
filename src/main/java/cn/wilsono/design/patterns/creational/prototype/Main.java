@@ -12,6 +12,17 @@ public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
+        // 浅拷贝
+        Car car1 = new Car("Amazing car", new Engine("Crazy engine"));
+        Car car2 = car1.clone();
+
+        System.out.println("car1 " + car1.toString());
+        System.out.println("car2 " + car2.toString());
+
+        System.out.println("Car是否相同？ " + (car1 ==  car2));
+        System.out.println("Engine是否相同？ " +  (car1.getEngine() == car2.getEngine()));
+
+        // 深拷贝
         Customer customer1 = new Customer("Jack", new Address("hank road"));
         Customer customer2 = customer1.deepClone();
 
