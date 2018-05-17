@@ -3,9 +3,9 @@ package cn.wilsono.design.patterns.structural.bridge;
 /**
  * Created by wilson on 2018/5/17.
  */
-public abstract class Conver {
+public abstract class Converter {
 
     protected IDao dao;
 
-    abstract String conver(int id);
+    abstract String converter(int id);
 }
